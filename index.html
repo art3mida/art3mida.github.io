@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Teodora Nickovic</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: monospace}
+	
+.rotate{
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+	cursor: pointer;
+}
+
+.rotate.down{
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
+#languages, #skills, #certificates, #web, #plang, #interests {
+	display: none;
+	}
+
+a {
+	text-decoration: none;
+	}
+	
+a:hover {
+	color: teal;
+	}
+
+</style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".rotate").click(function(){
+	console.log("ok");
+    $(this).toggleClass("down");
+  });
+  
+  $(".skills").click(function(){
+	$("#skills").slideToggle();
+	});
+
+  $(".languages").click(function(){
+    $("#languages").slideToggle();
+	});
+	
+  $(".certificates").click(function(){
+    $("#certificates").slideToggle();
+	});
+	
+  $(".web").click(function(){
+    $("#web").slideToggle();
+	});
+	
+  $(".plang").click(function(){
+    $("#plang").slideToggle();
+	});
+
+  $(".interests").click(function(){
+    $("#interests").slideToggle();
+	});
+
+	$(".contact").click(function(){
+    $("#contact").slideToggle();
+	});
+});
+</script>
+
+<script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.403/build/spline-viewer.js"></script>
+</head>
+
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+			<!-- <img src="teodora.png" style="width:100%" alt="Avatar"> -->
+
+			<spline-viewer loading="eager" events-target="global" url="https://prod.spline.design/7GxmFxD-CaHyNoeX/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="w3-container">
+		  <h2 class="w3-text-teal">Teodora Nićković</h2>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large"></i>Software Engineer @ Google Berlin</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large"></i>Berlin, Germany</p>
+          <hr>
+		    
+		   <div class="w3-margin-bottom">
+			  <div class="w3-large w3-text-theme"><b><i class="fa fa-chevron-right fa-fw w3-margin-right rotate w3-text-teal web"></i>Find me on the web</b></div>
+			  <div id="web">
+				  <div class="w3-margin"><a href="https://github.com/art3mida" target="_blank"><b><i class="fa fa-github fa-fw"></i>  github.com/art3mida</b> <br> (find projects + papers here!)</div>
+				  <div class="w3-margin"><a href="https://gitlab.com/art3mida" target="_blank"><b><i class="fa fa-university fa-fw"></i>  gitlab.com/art3mida</b> <br> (find more projects here!)</div>
+				  <div class="w3-margin"><a href="https://www.linkedin.com/in/teodora-nickovic/" target="_blank"><b><i class="fa fa-linkedin fa-fw"></i>  linkedin.com/teodora-nickovic</b></a></div>
+				  <br>
+			  </div>
+		   </div>
+
+		   <div class="w3-margin-bottom">
+			<div class="w3-large w3-text-theme"><b><i class="fa fa-chevron-right fa-fw w3-margin-right rotate w3-text-teal interests"></i>Interests</b></div>
+			<div id="interests">
+				<div class="w3-margin">Computer Graphics</div>
+				<div class="w3-margin">Digital Art</div>
+				<div class="w3-margin">Chess</div>
+				<div class="w3-margin">Games</div>
+				<div class="w3-margin">Journaling & Philosophy</div>
+				<div class="w3-margin">Rap Music (writing, listening, producing)</div>
+
+				<br>
+			</div>
+
+			<div style="padding: 20px 0;">
+				<a href="./portfolio.html"><button class="w3-teal w3-btn w3-round-large">3D portfolio [WIP]</button></a>
+			</div>
+			
+		 </div>
+		   
+		   <!-- ADD OTHER INTERESTS -->
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge"></i>Work Experience</h2>
+        <div class="w3-container">
+			<h5 class="w3-opacity"><b>Software Engineer @ Google Berlin</b></h5>
+			<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+				<ul>
+					<li>Successfully launched a product on Search, in a research team of 8 people with the goal of making language learning easy and accessible to everyone.</li>
+					<li>Led eng-design of the visual aspect of the experience (avatar animations done through a JS state machine, CSS animations).</li>
+					<li>Designed and engineered both the FE (Angular at first, rewritten in an internal React-like framework) and the BE (C++) for different language learning activities, rooted in pedagogical research.</li>
+					<li>Summarized research papers to leverage and apply LLMs, and facilitated weekly cross-team meetings with leadership.</li>
+				</ul>
+			<hr>
+		</div>
+		<div class="w3-container">
+			<h5 class="w3-opacity"><b>Level Design Intern @ Ubisoft</b></h5>
+			<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2023 - Feb 2023</h6>
+				<ul>
+					<li>Studied the theory and practice of level design during a four-week long optional master’s degree internship, tightly collaborating with UI/UX design, development and 3D modeling teams.</li>
+					<li>Successfully completed a prototype for a stealth level using the Far Cry 5 level design and development in-house engine.</li>
+				</ul>
+			<hr>
+		</div>
+		<div class="w3-container">
+			<h5 class="w3-opacity"><b>Teaching assistant @ Faculty of Mathematics, University of Belgrade</b></h5>
+			<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2021 - Jan 2022</h6>
+				<ul>
+					<li>Created the course structure with accompanying materials for two courses - Advanced Web Development (MEAN stack) and Network Programming (Java), as well as held once-a-week classes for both of the courses.</li>
+					<li>Held a Computer Graphics course (OpenGL, C++, Geometry), leveraging the LearnOpenGL web course materials , and focusing mostly on practical applications in student projects (linked repository is from the ongoing year, but the format is very similar every year).</li>
+					<li>Worked on 20+ student projects  in each of the courses, helping students design, implement and debug their ideas.</li>
+				</ul>
+			<hr>
+		</div>
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>Software Engineering Intern @ Youtube</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2019 - Sep 2019</h6>
+		  	<ul>
+				<li>Worked in the Youtube Ads team on automatic video creation and video summarization to automate channel trailer creation.</li>
+				<li>Used low level graphics libraries for video editing, rendering  and customization. Statistical tools for video processing were custom built as part of the project, while internal ML tools were used out-of-the-box.</li>
+				<li>Made it easy for creators to promote their channels and positively impact channel impressions, although the tool was repurposed for ad-shortening after the internship ended, where it had a stronger impact. :) Accepted a full-time offer.</li>
+		 	</ul>
+          <hr>
+        </div>
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>Software Engineering Intern @ Google</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2018 - Sep 2018</h6>
+		  	<ul>
+				<li>Engineered a tool for formatting and processing third-party data to be ingested into the knowledge graph that powers Search. Used C++ for the BE and Polymer for the FE.</li>
+				<li>Received highest praise for improving developer velocity, earning a return internship offer that was accepted.</li>
+		 	</ul>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Math teacher @ Educational center "Korak napred"</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - Jul 2018</h6>
+			<ul>
+				<li>Tutored students from grade 5 to grade 10, both in group and individual settings.</li>
+				<li>Prepared classes and practice materials for all math competition levels and for the Mathematical Grammar School entrance exam.</li>
+			</ul>
+          <hr>
+        </div>
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>Software Development Intern @ COFA Games</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2015 - Aug 2015</h6>
+		  	<ul>
+				<li>Implemented a promotional 3D runner game (Unity 3D / C#) for the ongoing ”Awakening of Heroes” MOBA, to be used during conferences and character reveals.</li>
+		 	</ul>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        
+		<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge"></i>Education</h2>
+        <div class="w3-container">
+			<h4 class="w3-teal-text"><b>(future) Master of Arts</b></h4>
+			<h5 class="w3-opacity"><b>University of Arts in Belgrade, Faculty of Applied Arts</b></h5>
+			<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - Sep 2023</h6>
+				<ul>
+					<li>GPA: 9.3/10  (finishing final thesis)</li>
+					<li>Track: Art and Design of Video Games</li>
+					<li>Relevant Courses: Web Game Development, Unreal Engine 4, 3D Modeling (Maya), 3D Animation (Maya), Character Design and Rigging (Maya), Sound Production for Games, Directing Video Games</li>
+				</ul>	
+			<hr>
+		  </div>
+		<div class="w3-container">
+          <h4 class="w3-teal-text"><b>Bachelor of Science</b></h4>
+		  <h5 class="w3-opacity"><b>University of Belgrade, Faculty of Mathematics</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2016 - Jul 2021</h6>
+			<ul>
+				<li>GPA: 9.1/10 (National Scholarship 18, 19)</li>
+				<li>Relevant Courses: Calculus, Geometry, Linear Algebra, Computer Graphics, AI & ML Basics, Computational Projective Geometry, Software Development, Web Development</li>
+			</ul>
+          <hr>
+        </div>
+        <div class="w3-container">
+		  <h4 class="w3-teal-text"><b>Matura</b></h4>
+          <h5 class="w3-opacity"><b>Mathematical Grammar School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2016</h6>
+          	<ul>
+				<li>A highschool with a special focus on technical subjects, meaning mathematics, physics and computer science. Graduated with a GPA of 4.0, and participated in math and computer science competitions althroughout highschool. You can find the entire curriculum <a href="https://mg.edu.rs/en/studies/curriculum.html"><b>here</b></a>.</li>
+			</ul>
+          <hr>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  Special thanks to w3schools. Adapted from <a href="https://www.w3schools.com/w3css/tryw3css_templates_cv.htm">this template</a>.
+</footer>
+
+</body>
+</html>

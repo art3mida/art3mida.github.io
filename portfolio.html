@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Teodora Nickovic - 3D potfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: monospace}
+	
+.rotate{
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+	cursor: pointer;
+}
+
+.rotate.down{
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+
+#languages, #skills, #certificates, #web, #plang, #interests {
+	display: none;
+	}
+
+a {
+	text-decoration: none;
+	}
+	
+a:hover {
+	color: teal;
+	}
+
+</style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".rotate").click(function(){
+	console.log("ok");
+    $(this).toggleClass("down");
+  });
+  
+  $(".skills").click(function(){
+	$("#skills").slideToggle();
+	});
+
+  $(".languages").click(function(){
+    $("#languages").slideToggle();
+	});
+	
+  $(".certificates").click(function(){
+    $("#certificates").slideToggle();
+	});
+	
+  $(".web").click(function(){
+    $("#web").slideToggle();
+	});
+	
+  $(".plang").click(function(){
+    $("#plang").slideToggle();
+	});
+
+  $(".interests").click(function(){
+    $("#interests").slideToggle();
+	});
+
+	$(".contact").click(function(){
+    $("#contact").slideToggle();
+	});
+});
+</script>
+
+<script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.403/build/spline-viewer.js"></script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+</head>
+
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+			<!-- <img src="teodora.png" style="width:100%" alt="Avatar"> -->
+
+			<spline-viewer loading="eager" events-target="global" url="https://prod.spline.design/7GxmFxD-CaHyNoeX/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="w3-container">
+		  <h2 class="w3-text-teal">Teodora Nićković</h2>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large"></i>Software Engineer @ Google Berlin</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large"></i>Berlin, Germany</p>
+          <hr>
+		    
+		   <div class="w3-margin-bottom">
+			  <div class="w3-large w3-text-theme"><b><i class="fa fa-chevron-right fa-fw w3-margin-right rotate w3-text-teal web"></i>Find me on the web</b></div>
+			  <div id="web">
+				  <div class="w3-margin"><a href="https://github.com/art3mida" target="_blank"><b><i class="fa fa-github fa-fw"></i>  github.com/art3mida</b> <br> (find projects + papers here!)</div>
+				  <div class="w3-margin"><a href="https://gitlab.com/art3mida" target="_blank"><b><i class="fa fa-university fa-fw"></i>  gitlab.com/art3mida</b> <br> (find more projects here!)</div>
+				  <div class="w3-margin"><a href="https://www.linkedin.com/in/teodora-nickovic/" target="_blank"><b><i class="fa fa-linkedin fa-fw"></i>  linkedin.com/teodora-nickovic</b></a></div>
+				  <br>
+			  </div>
+		   </div>
+
+		   <div class="w3-margin-bottom">
+			<div class="w3-large w3-text-theme"><b><i class="fa fa-chevron-right fa-fw w3-margin-right rotate w3-text-teal interests"></i>Interests</b></div>
+			<div id="interests">
+				<div class="w3-margin">Computer Graphics</div>
+				<div class="w3-margin">Digital Art</div>
+				<div class="w3-margin">Chess</div>
+				<div class="w3-margin">Games</div>
+				<div class="w3-margin">Journaling & Philosophy</div>
+				<div class="w3-margin">Rap Music (writing, listening, producing)</div>
+
+				<br>
+			</div>
+
+            <div style="padding: 20px 0;">
+                <a href="./portfolio.html"><button class="w3-teal w3-btn w3-round-large">3D portfolio [WIP]</button></a>
+            </div>
+		 </div>
+
+		<!-- ADD OTHER INTERESTS -->
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge"></i>Models</h2>
+        <div class="w3-container">
+			<h5> Grow Island </h5>
+            <model-viewer src="models/grow-island.glb" camera-controls tone-mapping="commerce" poster="models/poster.webp" shadow-intensity="1"> </model-viewer>
+			<hr>
+		</div>
+        <div class="w3-container">
+			<h5> Doberman </h5>
+            <model-viewer alt="Doberman 3D model" src="models/doberman.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+		<hr>
+        <div class="w3-container">
+			<h5> Yeezus Mansion </h5>
+            <model-viewer alt="Yeezus Mansion 3D model" src="models/yeezus-mansion.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+		<hr>
+		</div>
+        <div class="w3-container">
+			<h5> Procedural Building </h5>
+            <model-viewer alt="Example of a procedural building" src="models/procedural-building.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+		<hr>
+		</div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  Special thanks to w3schools. Adapted from <a href="https://www.w3schools.com/w3css/tryw3css_templates_cv.htm">this template</a>.
+</footer>
+
+</body>
+</html>
